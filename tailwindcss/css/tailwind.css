@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+@import url('Consolas.woff');
+@import url('Consolas-Bold.woff');
+*/
+
+/*
+@import url('Montserrat/Montserrat-Black.ttf');
+@import url('Montserrat/Montserrat-ExtraBold.ttf');
+@import url('Montserrat/Montserrat-Bold.ttf');
+@import url('Montserrat/Montserrat-SemiBold.ttf');
+@import url('Montserrat/Montserrat-Medium.ttf');
+@import url('Montserrat/Montserrat-Regular.ttf');
+@import url('Montserrat/Montserrat-Light.ttf');
+@import url('Montserrat/Montserrat-ExtraLight.ttf');
+@import url('Montserrat/Montserrat-Thin.ttf');
+*/
+
+@import url('../mythemes/round-black_custom/theme.css');
+
+
+p {
+	@apply my-3 text-gray-600;
+}
+
+.ckeditor {
+	@apply text-gray-600;
+	@apply my-6;
+}
+
+.ckeditor a {
+	@apply text-cc2 font-bold hover:text-cc1;
+}
+
+.ckeditor .alert,
+.alert {
+	@apply bg-cc4 p-4 rounded-lg text-lg text-gray-900 tracking-wide shadow-lg mb-8;
+}
+
+.ckeditor .alert a,
+.alert a {
+	@apply text-cc1 font-bold hover:underline;
+}
+
+.ckeditor .btn,
+.btn {
+	@apply text-base uppercase;
+	@apply bg-cc2;
+	/*@apply font-consolas;*/
+	@apply font-cf-regular;
+	@apply text-cc1;
+	@apply hover:text-white;
+	@apply hover:bg-cc1;
+	@apply my-1;
+	@apply py-2;
+	@apply px-4;
+	/*@apply w-auto;*/
+	@apply inline-block;
+	@apply rounded-sm;
+	@apply justify-between;
+	@apply font-normal !important;
+}
+
+.ckeditor strong,
+strong {
+	@apply text-cc1;
+}
+
+h1 {
+	@apply text-2xl font-bold tracking-wider text-cc1;
+}
+
+h2 {
+	@apply text-xl font-bold antialiased my-5 text-cc1;
+}
+
+h3 {
+	@apply text-lg font-bold antialiased my-5 text-cc1;	
+}
+
+h4 {
+	@apply text-lg font-bold antialiased mb-1;
+}
+
+h5 {
+	@apply font-bold;
+}
+
+body {
+	max-width: 1400px;
+	margin: auto;
+}
+
+#container {
+	margin: auto;	
+}
+
+::selection {
+	@apply bg-cc4;
+}
+
+.alert *::selection {
+	@apply bg-gray-50;
+	@apply text-gray-900;
+}
+
+.ckeditor img {
+	@apply md:inline-block;
+	@apply m-4;
+}
+
+#wallpaper {
+    height: 15rem;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+}
+
+.logo {
+    width: 65px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#archiveDivider {
+	/*height: 35px; */
+	/*background: #fef8d3;*/
+	border-bottom: solid 2px #00FF91;
+}
